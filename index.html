@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrence's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">terrence zhang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#skills">skills (???)</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger">
+        <div class="logo">terrence zhang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">about</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">skills (???)</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()" >contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/terrence_bw_pfp.jpeg" alt="Terrence Zhang profile picture" class="profile-image">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">hi, im </p>
+            <h1 class="title">terrence zhang</h1>
+            <p class="section__text__p2">3rd year engineering student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Terrence_Zhang_2023_v2.docx')">download cv</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">contact info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/terrence-zhang/'">
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/paprslip'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">get to know more</p>
+        <h1 class="title">about me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/terrence_side.JPG" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <!-- <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>4+ years as programmer</p>
+                        <p>8 months as a consultant</p>
+                    </div> -->
+                    <!-- <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>BASc Engineering Science<br>Major in Robotics</p>
+                    </div> -->
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5MKPdo286LIh93PtMh102U?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I think life's about the journey. I am an adventurer. I enjoy learning new things, discovering new places, and meeting new people. I chose my path for the sake of learning, to better understand the world around me, and through it I met some of the most amazing people I know. To quote Robert Frost,
+                    </p>
+                    <p class="quote">
+                        Two roads diverged in a wood, and I—
+                    </p>
+                    <p class="quote2">
+                        I took the one less traveled by,
+                    </p>
+                    <p class="quote2">
+                        And that has made all the difference.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Next Section" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">explore my</p>
+        <h1 class="title">experience</h1>
+        <div class="jobs">
+            <div class="job">
+                <img src="./assets/utat.png" alt="" class="company_logo">
+                <h3 class="job-title">Flight Operations Team Lead @ UTAT</h3>
+                <div class="duration">Sep 2022 - Present</div>
+                <div class="details">
+                    <img src="./assets/down_arrow.png" alt="" class="info-arrow" onclick="toggleExtraInfo(1)">
+                    designing, manufacturing, operating, and maintaining drones.
+                </div>
+                <div class="extra-info-1">
+                    <ul class="extra-info-bullets">
+                        <li>i lead the University of Toronto Aerospace Team's Flight Operations Team. here i run a tight ship, ensuring the safety of our people, and our property</li>
+                        <li>responsible for regulatory compliance, risk assessment, flight planning, and piloting of unmanned aerial systems in high traffic airspace</li>
+                        <li>work closely with the electrical, airframe, and software teams to develop requirements, integrate and test systems</li>
+                        <li>won 2nd in the 2023 AEAC Design Paper challenge</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="job">
+                <img src="./assets/deloitte.jpg" alt="" class="company_logo">
+                <h3 class="job-title">Cloud Engineering Analyst @ Deloitte</h3>
+                <div class="duration">May 2023 - Aug 2023</div>
+                <div class="details">
+                    <img src="./assets/down_arrow.png" alt="" class="info-arrow" onclick="toggleExtraInfo(2)">
+                    round 2 at deloitte. business strategy and design. assessing business and tech current state.
+                </div>
+                <div class="extra-info-2">
+                    <ul class="extra-info-bullets">
+                        <li>assessed current state capabilities of an airline, developing an enterprise architecture to identify duplicative efforts and technology gaps </li>
+                        <li>gathered info on current state application landscape through workshops and the use of CAST Highlight</li>
+                        <li>generated actionable insights for the modernization of cloud-based applications using Python, Excel, and CAST Highlight</li>
+                        <li>led the market research and internal strategy for an internal initiative for developing climate & sustainability assets</li>
+                        <li>participated in a multi-million dollar DevOps modernization pursuit for a large oil & gas company</li>
+                        <li>built demo portal for public transportation company using Power Platform</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="job">
+                <img src="./assets/deloitte.jpg" alt="" class="company_logo">
+                <h3 class="job-title">Cloud Engineering Analyst @ Deloitte</h3>
+                <div class="duration">May 2022 - Aug 2022</div>
+                <div class="details">
+                    <img src="./assets/down_arrow.png" alt="" class="info-arrow" onclick="toggleExtraInfo(3)">
+                    round 1 at deloitte. cloud native development & modernization. modernizing azure cloud applications.
+                </div>
+                <div class="extra-info-3">
+                    <ul class="extra-info-bullets">
+                        <li>assessed the current state landscape of a large grocery chain, identifying opportunities to refactor and optimize existing systems</li>
+                        <li>assisted in the creation of an ESG team focused on creating assets to enable climate & sustainability aspirations</li>
+                        <li>participated in campus recruitment efforts, representing Deloitte at various UofT events</li>
+                        <li>achieved the Azure Fundamentals certification</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="job">
+                <img src="./assets/pair.png" alt="" class="company_logo">
+                <h3 class="job-title">ML Research @ PAIR Lab</h3>
+                <div class="duration">May 2022 - Aug 2022</div>
+                <div class="details">
+                    <img src="./assets/down_arrow.png" alt="" class="info-arrow" onclick="toggleExtraInfo(4)">
+                    lots of reading.
+                </div>
+                <div class="extra-info-4">
+                    <ul class="extra-info-bullets">
+                        <li>researched the application of control barrier functions to enable safe autonomous mobility</li>
+                        <li>approach used bayesian linear regression models to learn the safety parameters</li>
+                        <li>demonstration of the approach was done using a simulated pendulum</li>
+                        <li>results presented to the lab :)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Next Section" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">check out my</p>
+        <h1 class="title">skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">programming languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/python.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Novice</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/cpp.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>C/C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/matlab.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>MATLAB</h3>
+                                <p>Novice</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/systemverilog.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>System Verilog</h3>
+                                <p>Novice</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/risc-v.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>RISC-V Assembly</h3>
+                                <p>Novice</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/html.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>HTML/CSS</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                      </div>
+                    </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">toolbox</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/excel.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Excel</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/powerpoint.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>PowerPoint</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/fusion360.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Fusion 360</h3>
+                                <p>Novice</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/cast.Default" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>CAST Higlight</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/figma.webp" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/azure.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Azure</h3>
+                                <p>Novice</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Next Section" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">browse my recent</p>
+        <h1 class="title">projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/naca_4412_render.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">vtol uav</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='./vtol-uav.html'">
+                            learn more
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+                            tba
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/ut-cyclone.JPG" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">ut-cyclone</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='./ut-cyclone.html'">
+                            learn more
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.aerialevolution.ca/annual-student-competition/'">
+                            aeac results
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/IMG_1085.jpg" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">matboard bridge</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='./bridge.html'">
+                            learn more
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/paprslip/civ'">
+                            github
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Next Section" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">get in touch</p>
+        <h1 class="title">contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:terrencezhang18@gmail.com">terrencezhang18@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/terrence-zhang/">linkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#experience">experience</a></li>
+                    <li><a href="#skills">skills (???)</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Terrence Zhang. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

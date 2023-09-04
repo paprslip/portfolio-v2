@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTOL UAV</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">terrence zhang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../">home</a></li>
+                <li><a href="../#about">about</a></li>
+                <li><a href="../#experience">experience</a></li>
+                <li><a href="../#skills">skills</a></li>
+                <li><a href="../#projects">projects</a></li>
+                <li><a href="../#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger">
+        <div class="logo">terrence zhang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="../">home</a></li>
+                <li><a href="../#about" onclick="toggleMenu()">about</a></li>
+                <li><a href="../#experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="../#skills" onclick="toggleMenu()">skills (???)</a></li>
+                <li><a href="../#projects" onclick="toggleMenu()">projects</a></li>
+                <li><a href="../#contact" onclick="toggleMenu()" >contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="project-intro">
+        <div class="vtol-uav-imgs">
+            <img src="./vtol-uav/airframe.png" alt="Sketches of possible airframe designs for VTOL UAV" class="vtol-uav-img">
+            <img src="./vtol-uav/naca_sim.png" alt="CAD file for proof of concept for printing 3D aerofoils" class="vtol-uav-img">
+            <img src="./vtol-uav/naca_4412_render.png" alt="Render of the wing design" class="vtol-uav-img">
+        </div>
+    </section>
+    <section id="project-body">
+        <div>
+            <p class="section__text__p1">project</p>
+            <h1 class="title">vtol-uav</h1>
+        </div>
+        <div class="project-body-upper">
+            <div class="project-text">
+                <p>
+                    VTOL UAV is this year's attempt at the Aerial Evolution Association of Canada's 2023
+                    student competition. The mission is similar to last year's, with an increased focus
+                    on high maneuverability in urban environments. Drawing on our lessons from the previous
+                    year's competition, as well as observations on the War in Ukraine, our team has decided
+                    on creating a hybrid drone, a vertical take-off and landing unmanned aerial system
+                    (VTOL UAV).
+                </p>
+                <p>
+                    The main reasons for the move are the fact that a high endurance platform is needed,
+                    and any platform that relies on rotars to provide lift will be inherently less efficient
+                    as the energy spent on creating forward momentum does not contribute to lift like it does
+                    for an aircraft with wings. The VTOL ability is required for the urban air maneuverability
+                    aspect. A lesson retained from the previous year is that while a hexarotor design does
+                    provide excellent lift and reliability, its design is heavy and hinders the range and
+                    agility of the platform. Switching to a VTOL UAV will allow us to move large distances fast,
+                    and small distances with agility.
+                </p>
+                <p>
+                    Switching to this design has not been easy, as there are many design challenges that come
+                    with VTOLs. Before that, we first needed to prove we can design an aircraft, and understand
+                    the dynamics and manufacturing challenges. Given that our team heavily prioritizes flight
+                    testing in realistic conditions, it would be inevitable that we would burn through a lot of
+                    airframes. Thus, creating a wing in a traditional process like using balsa and monocoat would
+                    require too much time to be practical.
+                </p>
+                <p>
+                    Instead we opted to 3D print a wing using lightweight PLA. Specific challenges arose from
+                    the need to create supports for the wing while ensuring a smooth continuous path for the
+                    printer nozzle. We were able to 3D print an aerofoil with the profile of the NACA 4412 that
+                    should be able to sustain a load factor of 3, with the ability to scale up this number should
+                    we decide to create an air dominance platform instead of an air taxi. However, due to the
+                    nature of laminated layers, we cannot accurately simulate how the system will behave. Luckily
+                    it is dirt cheap and simple to create these wings.
+                </p>
+                <p>
+                    The challenge now shifts to creating the rest of the airframe, implementing control surfaces,
+                    installing onboard electronics for the onboard flight computer, C2 link, and payload. This
+                    doesn't scratch the surface on the software challenges that we'll face, from creating a model
+                    to represent our dynamic system, tuning said system, and then integrating the autonomous flight
+                    system.
+                </p>
+                <p>
+                    I'm excited to see what's in store for me and my team, and the sort of challenges we will face
+                    and overcome. No one's ever changed the world overnight, but we have a garage, a soldering iron,
+                    and many laptops with GPUs! As the winter approaches, I can't help but think that my biggest 
+                    challenge will be figuring out how to stay warm when flight testing, and make sure none of the 
+                    electronics exceed their operating temperatures....
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="../">home</a></li>
+                    <li><a href="../#about">about</a></li>
+                    <li><a href="../#experience">experience</a></li>
+                    <li><a href="../#skills">skills</a></li>
+                    <li><a href="../#projects">projects</a></li>
+                    <li><a href="../#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Terrence Zhang. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT-CYCLONE</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">terrence zhang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../">home</a></li>
+                <li><a href="../#about">about</a></li>
+                <li><a href="../#experience">experience</a></li>
+                <li><a href="../#skills">skills</a></li>
+                <li><a href="../#projects">projects</a></li>
+                <li><a href="../#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger">
+        <div class="logo">terrence zhang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="../">home</a></li>
+                <li><a href="../#about" onclick="toggleMenu()">about</a></li>
+                <li><a href="../#experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="../#skills" onclick="toggleMenu()">skills (???)</a></li>
+                <li><a href="../#projects" onclick="toggleMenu()">projects</a></li>
+                <li><a href="../#contact" onclick="toggleMenu()" >contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="project-intro">
+        <div class="row">
+            <div class="column">
+              <img src="./ut-cyclone/5D3_7305.JPG" alt="Terrence speaking at AEAC competition presentation">
+            </div>
+            <div class="column">
+              <img src="./ut-cyclone/5D3_8108.JPG" alt="UT-CYCLONE tips over and a propeller strikes the ground">
+              <img src="./ut-cyclone/5D3_8120.JPG" alt="Flight Ops team conducts field repair after a crash">
+              <img src="./ut-cyclone/5D3_8130.JPG" alt="Terrence applying aviation grade speed tape to repair landing gear">
+              
+            </div>
+            <div class="column">
+              <img src="./ut-cyclone/5D3_8139.JPG" alt="Repaired UT-CYCLONE takes off!">
+              <img src="./ut-cyclone/cyclone.png" alt="Render of UT-CYCLONE">
+            </div>
+            <div class="column">
+                <img src="./ut-cyclone/5D3_8066.JPG" alt="UTAT Flight Ops team reviewing ground control station data">
+                <img src="./ut-cyclone/5D3_8089.JPG" alt="Terrence and Alex (Chief Engineer) carry drone to CYTF runway 31">
+                <img src="./ut-cyclone/5D3_8250.JPG" alt="Another glorious take-off for UT-CYCLONE!">
+            </div>
+        </div>
+    </section>
+    <section id="project-body">
+        <div>
+            <p class="section__text__p1">project</p>
+            <h1 class="title">ut-cyclone</h1>
+        </div>
+        <div class="project-body-upper">
+            <div class="project-text">
+                <p>
+                    UT-CYCLONE was a project initiated by myself, and my friends at UTAT to develop a
+                    long-range, heavy lift drone that could deliver payloads of 15 kg while remaining under
+                    a total maximum take-off weight of 25 kg. It participated in the Aerial Evolution
+                    Association of Canada's 2023 National Annual UAS Student Competition, where it won 2nd
+                    for the Phase 1 Technical Design challenge. 
+                </p>
+                <p>
+                    This was my second time attending an AEAC competition, and my first a team lead. I was
+                    also the pilot-in-command for our team, and to say it was nerve-wracking was an
+                    understatement. We had too many things left we wanted to do. We wanted to test the
+                    software more, retune the PID model that stabilized the drone, and switch over from our
+                    test configuration to our flight configuration.
+                </p>
+                <p>
+                    Unfortunately, we ran out of time. We had to go into competition with what we had, and
+                    trust that we had engineered it to be enough to do its mission. We set up our drone,
+                    and attempted task 1, which was a long range endurance flight and autonomous landing.
+                    We did not perform to our expectations in this task. There were some bugs that occured
+                    occasionally during testing that would prevent us establishing C2 link. Unfortunately we
+                    had become an example of Murphy's Law. Troubleshooting took too long, and we ran out of
+                    time to safely perform the flight, so we elected to use it as a test run for the following
+                    day's Task 2 mission.
+                </p>
+                <p>
+                    Task 2 is where I get to tell a story about great engineers, and great perseverence. To say
+                    we were disappointed after Task 1 was an understatement. We spent all night running 3D printers,
+                    and flight testing in an open field under the moonrise, flight testing, optimizing software, and
+                    tweaking stability parameters. We rolled up to competition the next morning, set up our drone
+                    in record time, and off it went to ferry passengers (Barbies and Kens) kilometers away in a
+                    urban air taxi scenario. It performed BVLOS autonomous landings, takeoffs, and navigation, 
+                    ferrying passengers around the airport at Alma. It was marvelous.
+                </p>
+                <p>
+                    On one particularly difficult BVLOS landing, the autopilot clipped a tree on takeoff, causing 
+                    damage to one of the propellers. Following this event, the drone began experiencing sustained,
+                    high-frequency vibrations that caused the propeller to stall, creating a thrust differential
+                    that lowered the attitude of the drone and losing altitude. It nosedived. We were heartbroken,
+                    watching our robot child nosedive into the woods from afar. But then, like a phoenix rising from
+                    ashes, it appeared once again over the horizon, zipping away to its next destination in stable,
+                    level flight. It then initiated a landing over the landing zone, but the landing occured too
+                    quickly and in the wrong spot, landing in a marsh next to the landing zone.
+                </p>
+                <p>
+                    Our investigation determined that the damaged propeller created the thrust differential, but then
+                    the system autonomously corrected for the required thrust. Eventually the propeller separated
+                    entirely, removing the stall problems arising from turbulent air flow coming off the propeller.
+                    The system then, autonomously, continued in level flight as a pentacopter, demonstrating the 
+                    resiliency and survivability of our design. Watching UT-CYCLONE rise over the horizon after
+                    nosediving was my proudest moment as an engineer. Queue the blasting of the Free Bird guitar solo!
+                </p>
+            </div>
+            <div class="sidebar">
+                <img src="./ut-cyclone/UTAT-patch-2022.png" alt="" class="sidebar-img">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5EWPGh7jbTNO2wakv8LjUI?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="../">home</a></li>
+                    <li><a href="../#about">about</a></li>
+                    <li><a href="../#experience">experience</a></li>
+                    <li><a href="../#skills">skills</a></li>
+                    <li><a href="../#projects">projects</a></li>
+                    <li><a href="../#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Terrence Zhang. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

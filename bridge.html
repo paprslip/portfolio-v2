@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matboard Bridge</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">terrence zhang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../">home</a></li>
+                <li><a href="../#about">about</a></li>
+                <li><a href="../#experience">experience</a></li>
+                <li><a href="../#skills">skills</a></li>
+                <li><a href="../#projects">projects</a></li>
+                <li><a href="../#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger">
+        <div class="logo">terrence zhang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="../">home</a></li>
+                <li><a href="../#about" onclick="toggleMenu()">about</a></li>
+                <li><a href="../#experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="../#skills" onclick="toggleMenu()">skills (???)</a></li>
+                <li><a href="../#projects" onclick="toggleMenu()">projects</a></li>
+                <li><a href="../#contact" onclick="toggleMenu()" >contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="project-intro">
+        <div class="row">
+            <div class="column">
+                <img src="./bridge/D7F41323-9D1C-496D-A4AA-12CB812F361C.jpg" alt="707 Group making the greatest bridge ever">
+                <img src="./bridge/CIV102-Project-Drawings_Group-07-1.png" alt="Views in diagrams of the bridge">
+            </div>
+            <div class="column">
+                <img src="./bridge/IMG_1078.jpg" alt="Teammate preparing flanges and diaphragms for attachment">
+                <img src="./bridge/CIV102-Project-Drawings_Group-07-2.png" alt="Attachment and connection view of bridge">
+            </div>
+            <div class="column">
+                <img src="./bridge/IMG_1083h.jpg" alt="">
+                <img src="./bridge/CIV102-Project-Drawings_Group-07-3.png" alt="Matbaord cut diagram">
+            </div>
+        </div>
+    </section>
+    <section id="project-body">
+        <div>
+            <p class="section__text__p1">project</p>
+            <h1 class="title">matboard bridge</h1>
+        </div>
+        <div class="project-body-upper">
+            <div class="project-text">
+                <p>
+                    The matboard bridge project was the first major engineering project I had as an
+                    undergraduate engineering student. It was a project that in hindsight was more of
+                    a test of engineering spirit than a complicated, logic puzzle. We were given a
+                    certain set of requirements, a large piece of matboard, contact cement, and the
+                    vague instructions of "make sure this 400N train can pass over the bridge".
+                </p>
+                <p>
+                    Given that we only had one shot, we could not miss our chance to blow. We wrote a
+                    program in MATLAB to perform the load calculations and failure modes, and from it
+                    created a program to display the failure modes and then optimize the size of
+                    structural elements like the flanges, webs, diaphragms, etc. The program determined
+                    the optimal size of the elements given the constraints of the rectangular matboard,
+                    and minimized waste.
+                </p>
+                <p>
+                    Having put in significant effort into the design phase of this project, the fun
+                    could finally begin. The preparation of the matboard bridge required careful,
+                    intricate cutting, as well as a slow application of the adhesive contact cement
+                    to the joining flaps and sustained force. This slow, methodical process took over 24h,
+                    resulting in a story for the ages.
+                </p>
+                <p>
+                    The finished product, "No Name", was a box girder bridge. After successfully passing
+                    the 400N dynamic loading scenario, it came time to prove our worth as engineers. The
+                    static loading test was a test to failure, in a competition for the honour of being
+                    the greatest structural engineer. Our bridge, made of paper pulp, withstood a max
+                    static load of 1326N, breaching previous records by over 100N! While we did not
+                    achieve first place, 5th in a was a worthy prize nonetheless.
+                </p>
+                <p>
+                    The most important lesson I learnt from this project was to trust myself, and my team.
+                    We all had the skills to achieve what we did, but in the beginning the task itself
+                    was intimidating enough to make us shy away. Being forced to approach it made us realize
+                    that with a methodical, tactical approach, and careful planning, you really only need
+                    one shot. And we were more than competent at not only taking that shot, but taking a
+                    shot at the top prize.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="../">home</a></li>
+                    <li><a href="../#about">about</a></li>
+                    <li><a href="../#experience">experience</a></li>
+                    <li><a href="../#skills">skills</a></li>
+                    <li><a href="../#projects">projects</a></li>
+                    <li><a href="../#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Terrence Zhang. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
